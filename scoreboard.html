@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="scoreboard.css">
+    <title>Autodarts Scoreboard</title>
+</head>
+<body>
+<div id="checkout">
+  <table id="checkout_p1"  class="hidden-table">
+    <tbody>
+      <tr>
+        <td class="check">
+          <div id="p1_pos1">0</div>
+        </td>
+        <td class="check">
+          <div id="p1_pos2">0</div>
+        </td>
+        <td class="check">
+          <div id="p1_pos3">0</div>
+        </td>
+    </tr>
+    </tbody>
+  </table>
+  <table id="checkout_p2"  class="hidden-table">
+    <tbody>
+      <tr>
+        <td class="check">
+          <div id="p2_pos1">0</div>
+        </td>
+        <td class="check">
+          <div id="p2_pos2">0</div>
+        </td>
+        <td class="check">
+          <div id="p2_pos3">0</div>
+        </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+    <div id="stats-container">
+  <table id="stats_table" class="hidden-table">
+    <tbody>
+      <tr>
+        <td class="title" style="text-align: center;">60+</td>
+        <td class="title" style="text-align: center;">100+</td>
+        <td class="title" style="text-align: center;">140+</td>
+        <td class="title" style="text-align: center;">180</td>
+      </tr>
+      <tr id="p1">
+        <td class="stats">
+          <div id="p1_60">0</div>
+        </td>
+        <td class="stats">
+          <div id="p1_100">0</div>
+        </td>
+        <td class="stats">
+          <div id="p1_140">0</div>
+        </td>
+        <td class="stats">
+          <div id="p1_180">0</div>
+        </td>
+      </tr>
+      <tr id="p2">
+        <td class="stats">
+          <div id="p2_60">0</div>
+        </td>
+        <td class="stats">
+          <div id="p2_100">0</div>
+        </td>
+        <td class="stats">
+          <div id="p2_140">0</div>
+        </td>
+        <td class="stats">
+          <div id="p2_180">0</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="title" colspan="4">Statistics</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div id="table-container">
+  <table id="result_table">
+    <tbody>
+      <tr>
+        <td class="title">
+          <div id="game">GameMode</div>
+        </td>
+        <td class="title_set" style="">
+          <div id="title_sets">Sets</div>
+        </td>
+        <td class="title">
+          <div id="title_legs">Legs</div>
+        </td>
+        <td class="title">
+          <div id="title_rounds">(0)</div>
+        </td>
+      </tr>
+      <tr id="p1">
+        <td class="name">
+          <div><span id="p1_name">Player #1</span><span id="p1_ppr">(0.00)</span></div><span id="p1_first" class="first" style="display: inline;"></span>
+        </td>
+        <td class="sets" style="">
+          <div id="p1_sets">0</div>
+        </td>
+        <td class="legs">
+          <div id="p1_legs">0</div>
+        </td>
+        <td class="left">
+          <div id="p1_left">501</div>
+        </td>
+      </tr>
+      <tr id="p2">
+        <td class="name">
+          <div><span id="p2_name">Player #2</span><span id="p2_ppr">(0.00)</span></div><span id="p2_first" class="first" style="display: none;"></span>
+        </td>
+        <td class="sets" style="">
+          <div id="p2_sets">0</div>
+        </td>
+        <td class="legs">
+          <div id="p2_legs">0</div>
+        </td>
+        <td class="left">
+          <div id="p2_left">501</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="title" colspan="4">
+          <div id="title">Autodarts Winter Master 2023</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="current" style="top: 35px; height: 45px;">
+    <div id="current_mark"></div>
+  </div>
+</div>
+<script type="text/javascript" src="scoreboard.js"></script>
+</body>
+</html>
