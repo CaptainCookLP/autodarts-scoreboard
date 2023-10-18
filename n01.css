@@ -1,0 +1,169 @@
+body {
+  width: 800px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#table-container {
+  position: absolute;
+  bottom: 0;
+  right: 55px;
+  margin: 20px;
+}
+#stats-container {
+  position: absolute;
+  bottom: 0;
+  right: 705px;
+  margin: 20px;
+}
+
+#average-container {
+  position: absolute;
+  bottom: 0;
+  right: 705px;
+  margin: 20px;
+}
+
+#checkout {
+  position: absolute;
+  bottom: 30px;
+  right: 705px;
+  margin: 20px;
+}
+
+.title, .title_set {
+  background-color: #000;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#title_sets,
+#title_legs,
+#title_rounds {
+  text-align: center;
+}
+
+#p1_ppr,
+#p2_ppr {
+  margin-left: 4vmin;
+  font-size: 20px;
+  color: #aaa;
+}
+
+.name div {
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 30px;
+  width: 360px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stats div {
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  background-color: #2196f3;
+}
+
+.average div {
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  background-color: #2196f3;
+}
+
+.check div {
+  color: white;
+  padding: 3px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  background-color: #b20000;
+}
+
+.sets,
+.legs {
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  width: 70px;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.left {
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  width: 100px;
+  font-size: 30px;
+  padding: 5px;
+}
+
+#result_table,
+#stats_table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #333;
+}
+
+#checkout_p1,
+#checkout_p2 {
+  border-collapse: collapse;
+  width: 75%;
+  border-bottom: 12px solid #333;
+}
+
+td {
+  border: 1px solid #333;
+}
+
+#current {
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  background-color: #c2185b;
+  width: 52px;
+  height: 30px;
+  transition: top 1s;
+}
+
+#current_mark {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-top: 12px solid transparent;
+  border-right: 25px solid #fff;
+  border-bottom: 12px solid transparent;
+}
+
+.hidden-table {
+  width: 100%;
+  transform: translateX(100%);
+  transition: transform 1s;
+}
+
+.shown-table {
+  width: 100%;
+  transform: translateX(0);
+  transition: transform 1s;
+}
+
+.hidden {
+            display: none;
+        }

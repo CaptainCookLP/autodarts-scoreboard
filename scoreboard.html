@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="scoreboard.css">
+	<link id="selectedCSS" rel="stylesheet" type="text/css" href="n01.css">
     <title>Autodarts Scoreboard</title>
 </head>
 <body>
+<h1>Wähle eine CSS-Datei:</h1>
+    <select id="cssDropdown">
+        <option value="n01.css">Nakka N01</option>
+        <option value="euroTour.css">German Darts Championship</option>
+        <option value="style2.css">PDC World Championship</option>
+        <option value="style3.css">World Grand Prix</option>
+    </select>
 <div id="checkout">
   <table id="checkout_p1"  class="hidden-table">
     <tbody>
@@ -39,7 +46,7 @@
     </tbody>
   </table>
 </div>
-    <div id="stats-container">
+<div id="stats-container">
   <table id="stats_table" class="hidden-table">
     <tbody>
       <tr>
@@ -82,6 +89,35 @@
     </tbody>
   </table>
 </div>
+<div id="average-container">
+  <table id="stats_table" class="shown-table">
+    <tbody>
+      <tr>
+        <td class="title" style="text-align: center;">Set 1</td>
+        <td class="title" style="text-align: center;">Set 2</td>
+      </tr>
+      <tr id="p1">
+        <td class="average">
+          <div id="p1_set1">120.75</div>
+        </td>
+        <td class="average">
+          <div id="p1_set2">0</div>
+        </td>
+      </tr>
+      <tr id="p2">
+        <td class="average">
+          <div id="p2_set1">0</div>
+        </td>
+        <td class="average">
+          <div id="p2_set2">0</div>
+        </td>
+      </tr>
+      <tr>
+        <td class="title" colspan="2">Set-by-Set Averages</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <div id="table-container">
   <table id="result_table">
     <tbody>
@@ -104,13 +140,13 @@
           <div><span id="p1_name">Player #1</span><span id="p1_ppr">(0.00)</span></div><span id="p1_first" class="first" style="display: inline;"></span>
         </td>
         <td class="sets" style="">
-          <div id="p1_sets">0</div>
+          <span id="p1_sets">0</span>
         </td>
         <td class="legs">
-          <div id="p1_legs">0</div>
+          <span id="p1_legs">0</span>
         </td>
         <td class="left">
-          <div id="p1_left">501</div>
+          <span id="p1_left">501</span>
         </td>
       </tr>
       <tr id="p2">
@@ -118,13 +154,13 @@
           <div><span id="p2_name">Player #2</span><span id="p2_ppr">(0.00)</span></div><span id="p2_first" class="first" style="display: none;"></span>
         </td>
         <td class="sets" style="">
-          <div id="p2_sets">0</div>
+          <span id="p2_sets">0</span>
         </td>
         <td class="legs">
-          <div id="p2_legs">0</div>
+          <span id="p2_legs">0</span>
         </td>
         <td class="left">
-          <div id="p2_left">501</div>
+          <span id="p2_left">501</span>
         </td>
       </tr>
       <tr>
