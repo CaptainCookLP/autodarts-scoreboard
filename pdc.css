@@ -8,30 +8,35 @@ body {
   font-family: Arial, sans-serif;
 }
 
+td {
+	padding: 0;
+}
+
 #table-container {
   position: absolute;
   bottom: 0;
   right: 55px;
   margin: 20px;
+  background: linear-gradient(90deg, rgba(22,134,6,1) 50%, rgba(5,69,1,1) 100%);
 }
 #stats-container {
   position: absolute;
   bottom: 0;
-  right: 700px;
+  right: 695px;
   margin: 20px;
 }
 
 #average-container {
   position: absolute;
   bottom: 0;
-  right: 700px;
+  right: 695px;
   margin: 20px;
 }
 
 #checkout {
   position: absolute;
   bottom: 30px;
-  right: 700px;
+  right: 695px;
   margin: 20px;
 }
 
@@ -48,6 +53,15 @@ body {
   text-align: center;
 }
 
+#title_sets,
+#title_legs {
+  width: 70px;
+}
+
+#title_rounds {
+	width: 100px;
+}
+
 #p1_ppr,
 #p2_ppr {
   margin-left: 4vmin;
@@ -55,7 +69,7 @@ body {
   color: #aaa;
 }
 
-.name div{
+.name div {
   background-color: white;
   color: black;
   display: flex;
@@ -69,22 +83,20 @@ body {
   text-overflow: ellipsis;
 }
 
-.stats{
-  background-color: #2196f3;
+.stats div {
   color: white;
-  text-align: center;
-  width: 100px;
+  padding: 5px;
   font-size: 30px;
-  padding: 6px;
+  width: 70px;
+  text-align: center;
 }
 
-.average{
-  background-color: #2196f3;
+.average div {
   color: white;
-  text-align: center;
-  width: 100px;
+  padding: 5px;
   font-size: 30px;
-  padding: 6px;
+  width: 100px;
+  text-align: center;
 }
 
 .check div {
@@ -97,26 +109,18 @@ body {
 }
 
 .sets,
-.legs {
-  background-color: #2196f3;
-  color: white;
-  text-align: center;
-  width: 70px;
-  font-size: 30px;
-  padding: 5px;
-}
-
-.name {
-	background-color: white;
-}
-
+.legs,
 .left {
-  background-color: #2196f3;
   color: white;
-  text-align: center;
-  width: 100px;
   font-size: 30px;
-  padding: 5px;
+  text-align: center;
+}
+
+.sets span,
+.legs span,
+.left span {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #result_table,
@@ -124,18 +128,14 @@ body {
 #average_table {
   border-collapse: collapse;
   width: 100%;
-  border: 1px solid #333;
+  background: linear-gradient(90deg, rgba(5,69,1,1) 50%, rgba(22,134,6,1) 100%);
 }
 
 #checkout_p1,
 #checkout_p2 {
   border-collapse: collapse;
   width: 75%;
-  border-bottom: 14px solid #20ff00;
-}
-
-td {
-  border: 1px solid #333;
+  border-bottom: 12px solid #20ff00;
 }
 
 #current {

@@ -3,7 +3,7 @@ body {
   height: 200px;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #20ff00;
   color: white;
   font-family: Arial, sans-serif;
 }
@@ -24,7 +24,6 @@ td {
   bottom: 0;
   right: 695px;
   margin: 20px;
-  display: none;
 }
 
 #average-container {
@@ -90,7 +89,6 @@ td {
   font-size: 30px;
   width: 70px;
   text-align: center;
-  background-color: #2196f3;
 }
 
 .average div {
@@ -99,7 +97,6 @@ td {
   font-size: 30px;
   width: 100px;
   text-align: center;
-  background-color: #2196f3;
 }
 
 .check div {
@@ -128,16 +125,18 @@ td {
 }
 
 #result_table,
-#stats_table {
+#stats_table,
+#average_table {
   border-collapse: collapse;
   width: 100%;
+  background: linear-gradient(90deg, rgba(6,30,40,1) 0%, rgba(27,55,103,1) 100%);
 }
 
 #checkout_p1,
 #checkout_p2 {
   border-collapse: collapse;
   width: 75%;
-  border-bottom: 12px solid #333;
+  border-bottom: 12px solid #20ff00;
 }
 
 #current {

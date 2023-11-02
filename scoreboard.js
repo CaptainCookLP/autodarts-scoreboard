@@ -101,7 +101,7 @@ function updateGameData(dataJson) {
   });
 
   // Pfeil Wechsel
-  current.style.top = currentPlayer === 0 ? "35px" : "82px";
+  current.style.top = currentPlayer === 0 ? "35px" : "83px";
 
   // Checkout Wechsel
   const positions = ['pos1', 'pos2', 'pos3'];
@@ -162,4 +162,4 @@ function toggleTable() {
   }, randomInterval);
 }
 
-toggleTable();
+//toggleTable();
